@@ -9,4 +9,4 @@ Feature: can not sign up conduit website
         And typed in Email field a valid Email
         And typed in password field a valid password
         When clicks on sign up button
-        Then the user should not signed up successfully And show a message that the user name and email have been used before
+        Then the user should not signed up successfully And show a message that the user name have been used before
