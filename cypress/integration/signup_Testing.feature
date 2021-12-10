@@ -1,6 +1,6 @@
-Feature: baker
+Feature: sign up conduit website
 
-    @TC_1
+
     Scenario: verify the user can sign up conduit website
         Given  a user navigated to sign up page
         And typed in username field a valid username
