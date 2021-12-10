@@ -6,8 +6,12 @@ Feature: baker
         And typed in username field a valid username
         And typed in Email field a valid Email
         And typed in password field a valid password
-# When  clicks on sign up button
-# Then Start to type your Then step here Start to type your And step here the user should signed up successfully
+        When  clicks on sign up button
+        Then  the user should signed up successfully
+
+
+
+
 
 
 
