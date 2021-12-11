@@ -1,23 +1,22 @@
-import { Given,And,Then,When,     Before,
-    After,} from "cypress-cucumber-preprocessor/steps";
+import { Given,And,Then,When} from "cypress-cucumber-preprocessor/steps";
 
 const websiteLink='https://demo.realworld.io/?fbclid=IwAR3DDj55wxw_ip5DwIFQGo4N2s7pQH27vuRfpHkFnd4l_erwueQqiHsrWZI#/register'
-const userName= "teesdlffst";
-const email = "teesfkfddst@prsedk.com";
+const userName= "test";
+const email = "teesdst@prsedk.com";
 const password = "123455";
 
 
-describe("verify the user can sign up conduit website", ()=>{
+describe("verify the user can not sign up conduit website When entering a user name and email previously used", ()=>{
     Given ('a user navigated to sign up page',()=>{
         cy.visit(websiteLink)
     
     })
     
-    And('typed in username field a valid username',()=>{
+    And('typed in username field a previously used user name',()=>{
         cy.get('[placeholder=Username]').type(userName) 
     })
     
-    And('typed in Email field a valid Email',()=>{
+    And('typed in Email field a previously valid Email',()=>{
         cy.get('[placeholder=Email]').type(email);
     })
     And('typed in password field a valid password',()=>{
@@ -28,9 +27,9 @@ describe("verify the user can sign up conduit website", ()=>{
          cy.get('button').contains('Sign up').should('be.visible').click()
      })
     
-    Then ('the user should signed up successfully',()=>{
-            cy.contains('Settings').should('be.visible').click()
-        cy.get('button').contains('Or click here to logout.').should('be.visible').click()
+    Then ('the user should not signed up successfully And show a message that the user name and email have been used before',()=>{
+            cy.contains('email has already been taken username has already been taken').should('be.visible')
+        
 
     })
 })
