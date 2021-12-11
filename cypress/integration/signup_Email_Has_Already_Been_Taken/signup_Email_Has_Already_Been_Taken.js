@@ -1,7 +1,7 @@
 import { Given,And,Then,When} from "cypress-cucumber-preprocessor/steps";
 
 const websiteLink='https://demo.realworld.io/?fbclid=IwAR3DDj55wxw_ip5DwIFQGo4N2s7pQH27vuRfpHkFnd4l_erwueQqiHsrWZI#/register'
-const userName= "tldfkgesdstst";
+const userName= "tldfksgesdstst";
 const email = "teesdst@prsedk.com";
 const password = "123455";
 
