@@ -1,10 +1,8 @@
 import { Given,And,Then,When} from "cypress-cucumber-preprocessor/steps";
 
 const websiteLink='https://demo.realworld.io/?fbclid=IwAR3DDj55wxw_ip5DwIFQGo4N2s7pQH27vuRfpHkFnd4l_erwueQqiHsrWZI#/login'
-const email = "bakerr@gmail.com";
-const password = "123455";
-const shortBio="my name is baker abdalkreem"
-
+const email = "bakeer@gmail.com";
+const password = "12345";
 
 describe("verify the user can sign in conduit website", ()=>{
     Given ('a user navigated to sign in page',()=>{
@@ -25,11 +23,12 @@ describe("verify the user can sign in conduit website", ()=>{
         cy.contains('Settings').should('be.visible').click()
     })
      
-    And('typed in short bio about you field a short bio',()=>{
-        cy.get(':nth-child(3) > .form-control').type(shortBio)
-    })
-    Then('when clicks on Update Settings button should Update Settings successfully',()=>{
-        cy.get('button').contains('Update Settings').should('be.visible').click()
-    })
+    Then ('when clicks on Or click here to logout button should logout successfully',()=>{
+    cy.contains('Settings').should('be.visible').click()
+    cy.get('button').contains('Or click here to logout.').should('be.visible').click()
+
+})
  
 })
+
+
