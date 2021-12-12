@@ -41,10 +41,8 @@ describe("verify the user can sign in conduit website", ()=>{
     And('typed in Enter tags field',()=>{
         cy.get('input[placeholder*="Enter tags"]').type(tags)
     })
-    Then('clicks on  Publish Article button',()=>{
+    Then('when clicks on Publish Article button should publish article successfully',()=>{
         cy.get('button').contains('Publish Article').should('be.visible').click()
     })
  
 })
-
-

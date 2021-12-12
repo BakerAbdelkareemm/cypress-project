@@ -11,7 +11,7 @@ Feature: add article
         And typed in What is this article about? field
         And typed in Write your article in markdown field
         And typed in Enter tags field
-        Then clicks on  Publish Article button
+        Then when clicks on Publish Article button should publish article successfully
       
 
 
