@@ -4,7 +4,7 @@ const websiteLink='https://demo.realworld.io/?fbclid=IwAR3DDj55wxw_ip5DwIFQGo4N2
 const email = "bakeer@gmail.com";
 const password = "12345";
 
-describe("verify the user can sign in conduit website", ()=>{
+describe("verify the user can logout from the site", ()=>{
     Given ('a user navigated to sign in page',()=>{
         cy.visit(websiteLink)
     })

@@ -6,7 +6,7 @@ const password = "12345";
 
 
 
-describe("verify the user can sign in conduit website", ()=>{
+describe("verify the user can edit profile settings", ()=>{
     Given ('a user navigated to sign in page',()=>{
         cy.visit(websiteLink)
     })

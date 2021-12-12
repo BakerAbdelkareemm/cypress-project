@@ -4,8 +4,7 @@ const websiteLink='https://demo.realworld.io/?fbclid=IwAR3DDj55wxw_ip5DwIFQGo4N2
 const email = "bakeer@gmail.com";
 const password = "12345";
 
-
-describe("Make sure home is working", ()=>{
+describe("verify the user can edit article", ()=>{
     Given ('a user navigated to sign in page',()=>{
         cy.visit(websiteLink)
     })
@@ -19,12 +18,16 @@ describe("Make sure home is working", ()=>{
     When('clicks on sign in button',()=>{
          cy.get('button').contains('Sign in').should('be.visible').click()
      })
-    
-     Then('when clicks on Global Feed should go successfully',()=>{
+
+     When('when clicks on Global Feed should go successfully',()=>{
         cy.contains('Global Feed').should('be.visible').click()
     })
+    When('clicks on the article',()=>{
+        cy.get(':nth-child(1) > .article-preview > .preview-link > h1.ng-binding').click()
+    })
+    Then('when clicks on edit article button should go to edit article successfully',()=>{
+        cy.get('.article-actions > article-actions.ng-isolate-scope > article-meta.ng-isolate-scope > .article-meta > :nth-child(3) > [ng-show="$ctrl.canModify"] > .btn-outline-secondary').click()
+    })
     
-    
+ 
 })
-
-

@@ -6,7 +6,7 @@ const password = "123455";
 const shortBio="my name is baker abdalkreem"
 
 
-describe("verify the user can sign in conduit website", ()=>{
+describe("verify the user can add short bio", ()=>{
     Given ('a user navigated to sign in page',()=>{
         cy.visit(websiteLink)
     })
