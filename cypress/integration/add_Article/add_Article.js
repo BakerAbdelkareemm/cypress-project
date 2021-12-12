@@ -10,7 +10,7 @@ const tags="implementation"
 
 
 
-describe("verify the user can sign in conduit website", ()=>{
+describe("verify the user can add article", ()=>{
     Given ('a user navigated to sign in page',()=>{
         cy.visit(websiteLink)
     })
