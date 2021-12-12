@@ -1,8 +1,8 @@
 import { Given,And,Then,When} from "cypress-cucumber-preprocessor/steps";
 
 const websiteLink='https://demo.realworld.io/?fbclid=IwAR3DDj55wxw_ip5DwIFQGo4N2s7pQH27vuRfpHkFnd4l_erwueQqiHsrWZI#/login'
-const email = "bakerr@gmail.com";
-const password = "123455";
+const email = "bakeer@gmail.com";
+const password = "12345";
 const shortBio="my name is baker abdalkreem"
 
 
