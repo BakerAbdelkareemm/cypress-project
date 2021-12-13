@@ -1,6 +1,6 @@
 Feature: post comment on the article
 
-
+    @CP-8
     Scenario: verify the user can post comment on the article
         Given a user navigated to sign in page
         And typed in Email field a valid Email

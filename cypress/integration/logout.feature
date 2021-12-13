@@ -1,6 +1,6 @@
 Feature: logout
 
-
+    @CP-7
     Scenario: verify the user can logout from the site
         Given a user navigated to sign in page
         And typed in Email field a valid Email

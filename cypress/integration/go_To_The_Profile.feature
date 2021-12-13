@@ -1,6 +1,6 @@
 Feature: go to the profile
 
-
+    @CP-5
     Scenario: verify the user can go to the profile
         Given a user navigated to sign in page
         And typed in Email field a valid Email

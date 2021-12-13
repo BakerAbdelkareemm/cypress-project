@@ -1,6 +1,6 @@
 Feature: short bio
 
-
+    @CP-9
     Scenario: verify the user can add short bio
         Given a user navigated to sign in page
         And typed in Email field a valid Email

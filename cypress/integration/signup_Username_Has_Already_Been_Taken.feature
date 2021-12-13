@@ -1,8 +1,6 @@
 Feature: can not sign up conduit website
 
-
-
-
+    @CP-17
     Scenario: verify the user can not sign up conduit website When entering a user name previously used
         Given  a user navigated to sign up page
         And typed in username field a previously used user name

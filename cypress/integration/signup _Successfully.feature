@@ -1,6 +1,6 @@
 Feature: sign up conduit website
 
-
+    @CP-13
     Scenario: verify the user can sign up conduit website
         Given  a user navigated to sign up page
         And typed in username field a valid username

@@ -1,6 +1,7 @@
 Feature: add article
 
 
+    @CP-1
     Scenario: verify the user can add article
         Given a user navigated to sign in page
         And typed in Email field a valid Email
@@ -12,7 +13,7 @@ Feature: add article
         And typed in Write your article in markdown field
         And typed in Enter tags field
         Then when clicks on Publish Article button should publish article successfully
-      
+
 
 
 

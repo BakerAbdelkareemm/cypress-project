@@ -1,6 +1,7 @@
 Feature: edit article
 
 
+    @CP-3
     Scenario: verify the user can edit article
         Given a user navigated to sign in page
         And typed in Email field a valid Email

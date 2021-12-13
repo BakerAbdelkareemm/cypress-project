@@ -1,6 +1,6 @@
 Feature: edit profile settings
 
-
+    @CP-4
     Scenario: verify the user can edit profile settings
         Given a user navigated to sign in page
         And typed in Email field a valid Email

@@ -1,6 +1,7 @@
 Feature: delete article
 
 
+    @CP-2
     Scenario: verify the user can delete article
         Given a user navigated to sign in page
         And typed in Email field a valid Email

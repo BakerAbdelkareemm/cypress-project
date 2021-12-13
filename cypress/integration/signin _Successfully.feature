@@ -1,6 +1,6 @@
 Feature: sign in conduit website
 
-
+    @CP-10
     Scenario: verify the user can sign in conduit website
         Given  a user navigated to sign in page
         And typed in Email field a valid Email

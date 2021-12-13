@@ -1,8 +1,7 @@
 Feature: can not sign in conduit website
 
 
-
-
+    @CP-11
     Scenario: verify the user can not sign in conduit website When entering an invalid email or password
         Given  a user navigated to sign in page
         And typed in Email field an incorrect email
